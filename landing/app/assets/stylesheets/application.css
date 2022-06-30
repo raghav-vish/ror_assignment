@@ -1,10 +1,11 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background-color: #F9FAFB;
     /*text-align: center;*/
+    /*overflow-x: hidden;*/
 
 }
 
@@ -133,6 +134,11 @@ body {
     overflow: auto;
     color: grey;
     font-size: 18px;
+}
+
+#ccurr td
+{
+   padding-left: 15px; 
 }
 
 #cpdfs
@@ -284,9 +290,9 @@ body {
 
 .song table, td
 {
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
     /*margin-top: 10px;*/
-    padding-left: 15px;
+    /*padding-left: 15px;*/
     border: 1px solid grey;
     height:  35px;
 }
@@ -294,7 +300,7 @@ body {
 #greatestfeatures
 {
     position:  relative;
-    top: 50px;
+    /*top: 50px;*/
     text-align: center;
     font-size: 40px;
     padding-top: 100px;
@@ -443,6 +449,7 @@ body {
 #faq table
 {
     border: 0px;
+    border-spacing: 30px;
 }
 
 #faq td
@@ -464,9 +471,66 @@ body {
     z-index: 100;
 }
 
-#Categories
+.Categories
+{
+    /*text-align: center;*/
+    background-color: #FFFFFF;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow-x:  auto;
+}
+
+.Categories table
+{
+    border-spacing: 50px;
+    border: 0px;
+}
+
+.Categories td
+{
+    border: 0px;
+    padding-left:  10px;
+    padding-right:  10px;
+}
+
+#top
+{
+    margin-top: 70px;
+    overflow-x:  scroll;
+
+}
+
+#top table
+{
+    border-spacing: 50px;
+    border:  0px;
+}
+
+#f2
+{
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 35%;
+}
+
+#f3
 {
     text-align: center;
-    background-color: #F9FAFB;
-    
+    color: lightgrey;
+    font-size: 18px;
+}
+
+#f22
+{
+    position: absolute;
+    top:  2000px;
+}
+
+#f32
+{
+    text-align: center;
+    color: lightgrey;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 45%;
 }

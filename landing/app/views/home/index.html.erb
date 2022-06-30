@@ -1,3 +1,15 @@
+<div id="top">
+  <table>
+    <tr>
+      <% for i in 1..5 %>
+      <td>
+        <a href="/"><%= image_tag "tc#{i}.jpeg", style: 'height: 400px' %></a>
+      </td>
+      <% end %>
+    </tr>
+  </table>
+</div>
+
 <div id="greatestfeatures">
   <b>Greatest Features</b>
   <table>
@@ -34,7 +46,7 @@
       <% for i in 0..2 do %>
         <td>
           <%= image_tag "#{i+1}.jpeg", style: 'height:10vw;width:100%;border-radius:20px' %>
-        <b style="font-size: 20px; text-align: left"><%= @courses[i].title %></b><br><br>
+        <b style="color: black;font-size: 20px; text-align: left"><%= @courses[i].title %></b><br><br>
         <%= @courses[i].description %><br><br>
         <b style="font-size: 20px">&#8377;<%= @courses[i].price %>  <strike style="font-size: 15px; color: grey">&#8377;<%= @courses[i].oldprice %></strike></b>
         <% end %>
@@ -84,7 +96,57 @@ Learn from anywhere and get quick solutions to all your questions. Easy student-
 <br><br><br>
 
 
-
+<div style="background-color: #F9FAFB;text-align: center;color: black; font-size: 40px;"><b>Categories</b><br><br></div>
+<% for i in ['1) Guitar','2) Keyboard','3) Vocal'] %>
+<div class="Categories" id="<%= '#{i}' %>">
+  <b style="color: black; font-size: 30px; text-align:center;"><%= "#{i}" %></b>
+  <table>
+    <tr>
+      <% for j in 1..5 %>
+      <td>
+        <a href="/"><%= image_tag "#{i[3].downcase}#{j}.jpg", style: 'height: 200px;border-radius:20px' %></a>
+      </td>
+      <% end %>
+    </tr>
+  </table>
+</div>
+<br><br>
+<% end %>
+<div class="Categories">
+  <b style="color: black; font-size: 30px; text-align:center;">4) Violin</b>
+  <table>
+    <tr>
+      <% for j in 1..5 %>
+      <td>
+        <a href="/"><%= image_tag "vi#{j}.jpg", style: 'height: 200px;border-radius:20px' %></a>
+      </td>
+      <% end %>
+    </tr>
+  </table>
+</div>
+<br><br>
+<div class="Categories">
+  <b style="color: black; font-size: 30px; text-align:center;">5) Staff Notation</b>
+  <table>
+    <tr>
+      <td>
+        <a href="/"><%= image_tag "sn1.jpg", style: 'height: 200px;border-radius:20px' %></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<br><br>
+<div class="Categories">
+  <b style="color: black; font-size: 30px; text-align:center;">6) Music Exam</b>
+  <table>
+    <tr>
+      <td>
+        <a href="/"><%= image_tag "me1.png", style: 'height: 200px;border-radius:20px' %></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<br><br>
 
 
 <div id="faq">
@@ -128,33 +190,32 @@ Learn from anywhere and get quick solutions to all your questions. Easy student-
     <strong style="color:black;font-size: 20px;">About Us</strong><br><br>
     Music has been infusing joy into our lives since time immemorial. From the beautiful sounds of nature to the songs we hear on our phones, music is all around us! Soor Malhar aims to provide quality music lessons that will enable music learners across the globe to create the joy for themselves and others alike. Come, let's feel the magic of melodies!
   </div>
-
   <div id="Guitar">
-    <b style="color:black;font-size: 20px;">Guitar<br><br></b>
-    <b>Full Packages<br>
-    Level 1<br>
-    Level 2<br>
-    Level 3<br>
-    Level 4<br>
-    Songs</b>
+    <b style="color:black;font-size: 20px;">Guitar<br><br></b><b>
+    <a href="/" style="text-decoration: none; color: blue">Full Packages<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 1<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 2<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 3<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 4<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Songs</b></a></b>
   </div>
   <div id="Keyboard">
-    <b style="color:black;font-size: 20px;">Keyboard</b><br><br>
-    <b>Full Packages<br>
-    Level 1<br>
-    Level 2<br>
-    Level 3<br>
-    Level 4<br>
-    Songs</b>
+    <b style="color:black;font-size: 20px;">Keyboard</b><br><br><b>
+    <a href="/" style="text-decoration: none; color: blue">Full Packages<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 1<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 2<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 3<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 4<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Songs</a></b>
   </div>
   <div id="Vocals">
-    <b style="color:black;font-size: 20px;">Vocals</b><br><br>
-    <b>Full Packages<br>
-    Level 1<br>
-    Level 2<br>
-    Level 3<br>
-    Level 4<br>
-    Songs</b>
+    <b style="color:black;font-size: 20px;">Vocals</b><br><br><b>
+    <a href="/" style="text-decoration: none; color: blue">Full Packages<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 1<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 2<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 3<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Level 4<br></a>
+    <a href="/" style="text-decoration: none; color: blue">Songs</a></b>
   </div>
   <div id="Connect">
     <b style="color:black;font-size: 20px;">Connect</b><br><br>
@@ -169,3 +230,26 @@ Learn from anywhere and get quick solutions to all your questions. Easy student-
   </div>
 </div>
 
+<div id="f2">
+  <a href="https://play.google.com/store/apps/details?id=in.teachmore.soormalharclasses"><%= image_tag "get-it-on-play-store.png", style: 'width:15%;' %></a>
+  <a href="https://itunes.apple.com/in/app/soor-malhar/id1454214052"><%= image_tag "get-it-on-apple-store.png", style: 'width:15%;' %></a>
+</div>
+<br><br>
+
+<div id="f3">
+  <b>
+  <a href="/" style="text-decoration: none; color: lightgrey;">About Us&nbsp;</a>
+  <a href="/" style="text-decoration: none; color: lightgrey;">Contact Us&nbsp;</a>
+  <a href="/" style="text-decoration: none; color: lightgrey;">Sitemap&nbsp;</a>
+  <a href="/" style="text-decoration: none; color: lightgrey;">Terms & Conditions<br><br></a>
+  <a href="/" style="text-decoration: none; color: lightgrey;">Cancellations & Refunds&nbsp;</a>
+  <a href="/" style="text-decoration: none; color: lightgrey;">Privacy Policy</a></b>
+</div>
+
+<a href="/" style="margin-left: 200px;">
+  <%= image_tag "soormalhar-logo-2.png", style: 'align:left;height:3vw;width:8vw' %></a>
+
+<b style="position: relative; left: 50%;text-align: right; color: grey; font-size: 18px;">© 2022 Soor Malhar Classes</b>
+
+<a href="https://www.teachmore.com/" style="position: relative; top:100px; left:10%">
+  <%= image_tag "tmlogo.png", style: 'height:3vw;width:8vw' %></a>
