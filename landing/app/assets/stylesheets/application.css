@@ -1,0 +1,472 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+    background-color: #F9FAFB;
+    /*text-align: center;*/
+
+}
+
+#Header
+{
+    z-index: 1000;
+    position: fixed;
+    width:  100%;
+    background-color: #FFFFFF;
+    /*align-content: right;*/
+}
+
+#Header a
+{
+    color:  blue;
+    text-underline-position: none;
+}
+
+#Top
+{
+    /*border-style: solid;
+    border-width: 1;
+    border-color: black;*/
+    background-color: #FFFFFF;
+    position: absolute;
+    margin-top: 50px;
+    height:  60%;
+    /*margin-left: 0;*/
+    width: 99%;
+    flex-grow:  1;
+}
+
+#ctitle
+{
+    position: absolute;
+    font-size: 30px;
+    left: 8%;
+    top: 40%;
+}
+
+#cdesc
+{
+    position: relative;
+    font-size: 20px;
+    color: grey;
+    left:  8%;
+    top: 50%;
+    width: 32%;
+    margin-top: 10px;
+}
+#ccostbox
+{
+    background-color: #20edb1;
+    border-radius: 10px;
+    position: relative;
+    font-size: 30px;
+    color: #000000;
+    left:  8%;
+    top: 50%;
+    margin-top: 20px;
+    width: 32%;
+    height: 50px;
+    display:  flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#ccostbox:hover
+{
+    background-color: #33cccc;
+}
+
+#ccost
+{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size:  30px;
+
+}
+
+#cimage
+{
+    position: absolute;
+    left:  45%;
+    margin-left: 50px;
+    top: 10%;
+}
+
+#Bottom
+{
+    background-color: #F9FAFB;
+    position: absolute;
+    width:  99%;
+    top: 80%;
+    left: 0%;
+    /*border-style: solid;
+    border-width: 1;
+    border-color: black;*/
+}
+
+#cdetails
+{
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    padding: 50px;
+    width:  50%;
+    left: 10%;
+    overflow: auto;
+    color: grey;
+    font-size: 18px;
+}
+
+#ccurr
+{
+    margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    padding: 50px;
+    width:  50%;
+    left: 10%;
+    bottom: 30%;
+    overflow: auto;
+    color: grey;
+    font-size: 18px;
+}
+
+#cpdfs
+{
+    position:  absolute;
+    padding: 50px;
+    top:  0%;
+    width:  50%;
+    left: 70%;
+    overflow: auto;
+    font-size: 18px;
+}
+
+#cstudents
+{
+    position:  absolute;
+    padding: 50px;
+    width:  50%;
+    left: 70%;
+    overflow: auto;
+    font-size: 18px;
+}
+
+#SearchBox
+{
+    position:  absolute;
+    left:  15%;
+    top: 12%;
+    width:  50%;
+    height:  30px;
+    color:  grey;
+    border-radius: 10px;
+    border-color: grey;
+}
+
+#SearchIcon
+{
+    position:  absolute;
+    left:  16%;
+    top: 22%;
+    border-radius: 20px;
+}
+
+#links
+{
+    position: absolute;
+    right: 8%;
+    top: 25%;
+    color: blue;
+    font-size: 20px;
+}
+
+#SignUp
+{
+
+    position: absolute;
+    right: 2%;
+    text-align: center;
+    display:  flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 37px;
+    width: 90px;
+    top: 10%;
+    font-size: 20px;
+    background-color: blue;
+    color: #FFFFFF;
+    border-radius: 15%;
+
+}
+
+#SignUp: hover
+{
+    color: lightgrey;
+}
+
+.ls
+{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+#footer
+{
+    background-color: #FFFFFF;
+    color: grey;
+    width: 100%;
+    height: 400px;
+    /*position: sticky;*/
+    /*top:  20000px;*/
+    /*bottom:  0;*/
+    z-index: 100;
+}
+
+#AboutUs
+{
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 20px;
+    width: 20%;
+    margin-left: 50px;
+}
+
+#Guitar
+{
+    position:  relative;
+    text-align: left;
+    color: blue;
+    width: 25%;
+    font-size: 20px;
+    margin-left: 500px;
+    bottom: 260px;
+}
+
+#Keyboard
+{
+    position:  relative;
+    text-align: left;
+    color: blue;
+    width: 25%;
+    font-size: 20px;
+    margin-left: 750px;
+    bottom: 440px;
+}
+
+#Vocals
+{
+    position:  relative;
+    text-align: left;
+    color: blue;
+    width: 25%;
+    font-size: 20px;
+    margin-left: 1000px;
+    bottom: 620px;
+}
+
+#Connect
+{
+    position:  relative;
+    text-align: left;
+    /*color: blue;*/
+    width: 250px;
+    font-size: 18px;
+    margin-left: 1250px;
+    bottom: 800px;
+}
+
+.song table, td
+{
+    padding-bottom: 10px;
+    /*margin-top: 10px;*/
+    padding-left: 15px;
+    border: 1px solid grey;
+    height:  35px;
+}
+
+#greatestfeatures
+{
+    position:  relative;
+    top: 50px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+    color: black;
+    /*margin-left: 50px;*/
+    /*margin-right: 50px;*/
+    background-color: #FFFFFF;
+}
+
+#greatestfeatures td
+{
+    width: 500px;
+    border-radius: 10px;
+    color:  grey;
+    border-color: lightgrey;
+    padding:  10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+#greatestfeatures table
+{
+    border-spacing: 50px;
+}
+
+#FeaturedCollections
+{
+    position:  relative;
+    padding-top: 100px;
+    color: grey;
+    font-size: 18px;
+    /*margin-left: 100px;*/
+    text-align: center;
+    background-color: #F9FAFB;
+}
+
+#FeaturedCollections table
+{
+    border-spacing: 50px;
+    border: 0px;
+}
+
+#FeaturedCollections td
+{
+    border: 0px;
+
+    padding:  10px;
+    width:  500px;
+    text-align: left;
+}
+
+#Testimonials
+{
+    text-align: center;
+    /*margin-top: 100px;*/
+}
+
+.testimoim 
+{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: left;
+    /*font-size:  100px;*/
+}
+
+.testimoim b
+{
+    position:  relative;
+    right: 300px;
+    z-index: 100;
+}
+
+.testimotext
+{
+    background-color: #FFFFFF;
+    color: grey;
+    position:  relative;
+    bottom: 175px;
+    left: 200px;
+    margin-left: 500px;
+    margin-right: 100px;
+    text-align: left;
+}
+
+#getstartedt
+{
+    z-index: 50;
+    padding-top: 10px;
+    background-color: #FFFFFF;
+    width: 45%;
+    padding-left: 10px;
+    color: grey;
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+}
+
+#getstartedi
+{
+    position: relative;
+    left: 52.5%;
+    bottom: 273px;
+    z-index: 0;
+}
+
+#lgs
+{
+    background-color: blue;
+    color: white;
+    width:  190px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+
+    display:  flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#lgs:hover
+{
+    color: lightgrey;
+}
+
+#download
+{
+    padding-left: 100px;
+    color: grey;
+    font-size: 25px;
+}
+
+#faq
+{
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: left;
+    color: grey;
+}
+
+#faq table
+{
+    border: 0px;
+}
+
+#faq td
+{
+    border: 0px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+#footer2
+{
+    background-color: #FFFFFF;
+    color: grey;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top:  1700px;
+    bottom:  0;
+    z-index: 100;
+}
+
+#Categories
+{
+    text-align: center;
+    background-color: #F9FAFB;
+    
+}

@@ -1,0 +1,125 @@
+<div id="<%= dom_id course %>">
+  <!--<p>
+    <strong>Course:</strong>
+    <%= course.course_id %>
+  </p>-->
+  <div id="Top">
+    <div id="ctitle">
+      <strong><%= course.title %></strong><br>
+    </div>
+
+    <div id="cdesc">
+      <%= course.description %>
+    </div>
+    
+      <div id="ccostbox">
+        <!-- <div id="ccost"> -->
+          <strong>Enroll for &#8377;<%= course.price %>  <strike style="font-size: 15px; color:grey">&#8377;<%= course.oldprice %></strike></strong>
+        <!-- </div> -->
+      </div>
+    
+    <div id="cimage">
+    <%= image_tag "#{@imgpath}.jpg", style: 'height:23vw;width:40vw;border-radius:20px' %>
+    </div>
+  </div>
+
+  <div id="Bottom">
+    <div id="cdetails">
+      <strong style="font-size: 30px; color: black">Details</strong><br><br>
+      <%= course.details %>
+    </div>
+
+    <!-- <div id="cdetails"> -->
+    <div id="ccurr">
+      <strong style="font-size: 30px; color: black">Curriculum</strong><br><br>
+      <table class='song' style="width:100%">
+        <th style="background-color: lightgrey; color:black; height: 30px; text-align: left; padding-left: 15px;"><%= course.song1 %></th>
+        <tr><td><i class="fa-brands fa-youtube"></i></i>   Song: <%= course.song1 %></td></tr>
+        <tr><td><i class="fa-solid fa-file"></i>  '<%= course.song1 %>' song notation</td></tr>
+      </table>
+      <br>
+      <table class='song' style="width:100%">
+        <th style="background-color: lightgrey; color:black; height: 30px; text-align: left; padding-left: 15px;"><%= course.song2 %></th>
+        <tr><td><i class="fa-brands fa-youtube"></i></i>   Song: <%= course.song2 %></td></tr>
+        <tr><td><i class="fa-solid fa-file"></i>  '<%= course.song2 %>' song notation</td></tr>
+      </table>
+      <br><table class='song' style="width:100%">
+        <th style="background-color: lightgrey; color:black; height: 30px; text-align: left; padding-left: 15px;"><%= course.song3 %></th>
+        <tr><td><i class="fa-brands fa-youtube"></i></i>   Song: <%= course.song3 %></td></tr>
+        <tr><td><i class="fa-solid fa-file"></i>  '<%= course.song3 %>' song notation</td></tr>
+      </table>
+      <br><table class='song' style="width:100%">
+        <th style="background-color: lightgrey; color:black; height: 30px; text-align: left; padding-left: 15px;"><%= course.song4 %></th>
+        <tr><td><i class="fa-brands fa-youtube"></i></i>   Song: <%= course.song4 %></td></tr>
+        <tr><td><i class="fa-solid fa-file"></i>  '<%= course.song4 %>' song notation</td></tr>
+      </table>
+      <br>
+
+    </div>
+
+    <div id="cpdfs">
+      <i class="fa-solid fa-file" style="color:blue"></i>
+      <%= course.pdfs %>
+      <strong>PDFs</strong><br><br>
+      <i class="fa-solid fa-person"  style="color:blue"></i>
+      <%= course.students %>
+      <strong>+ students</strong><br><br>
+      <i class="fa-solid fa-clock"  style="color:blue"></i>
+      <%= course.access %>
+      <strong> Access</strong><br><br>
+      <p style="color:grey">Categories<br>
+      <b style="color: blue"><%= course.category %></b><br>
+      <p style="color:grey">Language<br>
+      <b style="color: blue"><%= course.language %></b>
+    </div>
+  </div>
+
+  <div id="footer2">
+  <div id="AboutUs">
+    <strong style="color:black;font-size: 20px;">About Us</strong><br><br>
+    Music has been infusing joy into our lives since time immemorial. From the beautiful sounds of nature to the songs we hear on our phones, music is all around us! Soor Malhar aims to provide quality music lessons that will enable music learners across the globe to create the joy for themselves and others alike. Come, let's feel the magic of melodies!
+  </div>
+
+  <div id="Guitar">
+    <b style="color:black;font-size: 20px;">Guitar<br><br></b>
+    <b>Full Packages<br>
+    Level 1<br>
+    Level 2<br>
+    Level 3<br>
+    Level 4<br>
+    Songs</b>
+  </div>
+  <div id="Keyboard">
+    <b style="color:black;font-size: 20px;">Keyboard</b><br><br>
+    <b>Full Packages<br>
+    Level 1<br>
+    Level 2<br>
+    Level 3<br>
+    Level 4<br>
+    Songs</b>
+  </div>
+  <div id="Vocals">
+    <b style="color:black;font-size: 20px;">Vocals</b><br><br>
+    <b>Full Packages<br>
+    Level 1<br>
+    Level 2<br>
+    Level 3<br>
+    Level 4<br>
+    Songs</b>
+  </div>
+  <div id="Connect">
+    <b style="color:black;font-size: 20px;">Connect</b><br><br>
+    <i class="fa-solid fa-phone-flip"></i><a href="tel: +91 9898332520" style="text-decoration: none;">  +91 9898332520</a><br><br>
+    <i class="fa-solid fa-envelope"></i><a href="mailto: soormalharmusic@gmail.com" style="text-decoration: none;">  soormalharmusic@gmail.com</a><br><br>
+    <i class="fa-solid fa-house"></i>  GF 11-12 Nandanvan complex, Nandalay haveli, Rameshwar temple road, Harinagar, Gotri Road, Vadodara, Gujarat, India - 390023<br><br>
+    <i class="fa-solid fa-map"></i>  Visit us on Google Maps<br><br>
+    <a href="https://www.facebook.com/musiclearningapp" style="color: blue"><i class="fa-brands fa-facebook-square"></i></a>    
+    <a href="https://www.instagram.com/musiclearning" style="color: blue"><i class="fa-brands fa-instagram"></i></a>   
+    <a href="https://www.youtube.com/channel/UCy0gO15CjNwnRzJbg1IXK0Q" style="color: blue"><i class="fa-brands fa-youtube"></i></a>
+    </div><br>
+  </div>
+</div>
+
+
+
+<!-- </div>

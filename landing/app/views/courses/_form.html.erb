@@ -1,0 +1,93 @@
+<%= form_with(model: course) do |form| %>
+  <% if course.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+        <% course.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :course_id, style: "display: block" %>
+    <%= form.text_field :course_id %>
+  </div>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :details, style: "display: block" %>
+    <%= form.text_field :details %>
+  </div>
+
+  <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.number_field :price %>
+  </div>
+
+  <div>
+    <%= form.label :oldprice, style: "display: block" %>
+    <%= form.number_field :oldprice %>
+  </div>
+
+  <div>
+    <%= form.label :pdfs, style: "display: block" %>
+    <%= form.number_field :pdfs %>
+  </div>
+
+  <div>
+    <%= form.label :students, style: "display: block" %>
+    <%= form.number_field :students %>
+  </div>
+
+  <div>
+    <%= form.label :access, style: "display: block" %>
+    <%= form.text_field :access %>
+  </div>
+
+  <div>
+    <%= form.label :category, style: "display: block" %>
+    <%= form.text_field :category %>
+  </div>
+
+  <div>
+    <%= form.label :language, style: "display: block" %>
+    <%= form.text_field :language %>
+  </div>
+
+  <div>
+    <%= form.label :song1, style: "display: block" %>
+    <%= form.text_field :song1 %>
+  </div>
+
+  <div>
+    <%= form.label :song2, style: "display: block" %>
+    <%= form.text_field :song2 %>
+  </div>
+
+  <div>
+    <%= form.label :song3, style: "display: block" %>
+    <%= form.text_field :song3 %>
+  </div>
+
+  <div>
+    <%= form.label :song4, style: "display: block" %>
+    <%= form.text_field :song4 %>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

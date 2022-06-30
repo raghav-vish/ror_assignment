@@ -1,0 +1,171 @@
+<div id="greatestfeatures">
+  <b>Greatest Features</b>
+  <table>
+    <tr>
+      <td><b style="font-size: 20px; color:black">Personal Help</b><br>Ask questions, write comments in any lesson or topic and get quick solutions.</td>
+      <td><b style="font-size: 20px; color:black">Affordable</b><br>As good as a traditional music class, and in some ways even better. More affordable, more flexible.</td>
+      <td><b style="font-size: 20px; color:black">High Quality Videos</b><br>Access high quality video tutorials anytime and anywhere, 24/7.</td>
+    </tr>
+    <tr>
+      <td><b style="font-size: 20px; color:black">Learn at Home</b><br>Watch, learn, revise at your own pace, place, and time through our high - quality music tutorials.</td>
+    </tr> 
+  </table>
+</div>
+
+<div id="FeaturedCollections">
+  <b style="text-align: center; font-size: 40px; color: black;">
+  Featured Collections</b>
+  <table>
+    <% for i in [0,4] do%>
+    <tr>
+      <% for j in i..i+3 do %>
+        <td>
+          <%= image_tag "c#{j+1}.jpeg", style: 'height:10vw;width:100%;border-radius:20px' %>
+        <b style="color: black;font-size: 20px; text-align: left"><%= @collections[j].title %></b><br><br>
+        <%= @collections[j].description %><br><br>
+        <b style="color: blue; font-size: 18px"><%= @collections[j].numberofcourses %> courses</b><br><br>
+        <b style="color: black;font-size: 20px">&#8377;<%= @collections[j].price %>  <strike style="font-size: 15px; color: grey">&#8377;<%= @collections[j].oldprice %></strike></b>
+        <b style="color:grey">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<%= @collections[j].rating %> <i class="fa-solid fa-star" style="color: grey"></i> (<%= @collections[j].numberofreviews %>)
+        <% end %>
+        </td>
+    </tr>
+    <% end %>
+    <tr>
+      <% for i in 0..2 do %>
+        <td>
+          <%= image_tag "#{i+1}.jpeg", style: 'height:10vw;width:100%;border-radius:20px' %>
+        <b style="font-size: 20px; text-align: left"><%= @courses[i].title %></b><br><br>
+        <%= @courses[i].description %><br><br>
+        <b style="font-size: 20px">&#8377;<%= @courses[i].price %>  <strike style="font-size: 15px; color: grey">&#8377;<%= @courses[i].oldprice %></strike></b>
+        <% end %>
+        </td>
+    </tr>
+  </table>
+<br>
+</div>
+
+
+<div id="Testimonials">
+  <b style="text-align: center; font-size: 40px; color: black;">Testimonials<br><br></b>
+  <div class="testimoim">
+    <b><%= image_tag "t1.png", style: 'height:12.5vw;width:12.5vw;align-left;border-radius:125px' %></b></div>
+  <div class="testimotext">
+    <i class="fa-solid fa-quote-left" style="font-size: 75px; color: lightgrey"></i><br>
+    "The best music class I know"<br>
+    <b style="font-size: 20px; color: black">Ashwati Menon</b>
+  </div>
+  <div class="testimoim">
+    <b><%= image_tag "t2.png", style: 'height:12.5vw;width:12.5vw;align-left;border-radius:125px' %></b></div>
+  <div class="testimotext">
+    <i class="fa-solid fa-quote-left" style="font-size: 75px; color: lightgrey"></i><br>
+    "Best place to learn, Guruji you are the best."<br>
+    <b style="font-size: 20px; color: black">Krishna Patel</b>
+  </div>
+
+</div>
+
+<div id="getstartedt">
+  <b style="font-size: 30px; color: black;">Online live one-to-one sessions for Guitar, Keyboard, Vocals, and Violin</b><br><br>
+Learn from anywhere and get quick solutions to all your questions. Easy student-tutor interaction and personalized lesson plans based on student's progress.
+<br><br>
+<div id="lgs"><b>Let's get started</b></div>
+</div>
+<div id="getstartedi">
+  <%= image_tag "gsi.png", style: 'width:45%;align-left;' %>
+</div>
+
+<div id="download">
+  <b style="color: black; font-size: 30px;">Never stop learning!</b><br><br>
+  Learn anytime and anywhere with our mobile apps<br><br>
+  <a href="https://play.google.com/store/apps/details?id=in.teachmore.soormalharclasses"><%= image_tag "get-it-on-play-store.png", style: 'width:15%;align-left;' %></a>
+  <a href="https://itunes.apple.com/in/app/soor-malhar/id1454214052"><%= image_tag "get-it-on-apple-store.png", style: 'width:15%;align-left;' %></a>
+
+</div>
+<br><br><br>
+
+
+
+
+
+<div id="faq">
+  <b style="font-size: 30px; color: black;">Frequently Asked Questions</b><br><br><br>
+  <table>
+    <tr>
+      <td>
+        <b style="color: black; font-size: 22px;">What are the advantages of online learning?</b><br>
+        Affordable, convenient, and flexible, online learning has many advantages and is ideal for anyone who wants to learn independently.
+      </td>
+      <td>
+        <b style="color: black; font-size: 22px;">Can I take more than one course at a time?</b><br>
+        Absolutely! In fact, many students buy more than one course at a time according to their requirement.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b style="color: black; font-size: 22px;">Which age group are the courses made for?</b><br>
+        From children to seniors, everyone is welcome! People from all walks of life enjoy learning music every day with Soor Malhar.
+      </td>
+      <td>
+        <b style="color: black; font-size: 22px;">How are the courses structured?</b><br>
+        Our online courses consist of video tutorials and other learning tools such as revision notes, images and notation files for songs. This enables everyone including beginners to learn music in a fun and engaging way.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b style="color: black; font-size: 22px;">How do I select a course?</b><br>
+        Selecting a course is super easy! Just browse through the wide range of courses available and choose one based on your interest and preference. For any questions related to course selection, feel free to call us on +91 635 556 4780
+      </td>
+      <td>
+        <b style="color: black; font-size: 22px;">What if I need technical assistance?</b><br>
+        For any issues you’re facing, write to us at support@soormalharmusicclass.co.in and we shall gladly resolve all your queries.
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div id="footer">
+  <div id="AboutUs">
+    <strong style="color:black;font-size: 20px;">About Us</strong><br><br>
+    Music has been infusing joy into our lives since time immemorial. From the beautiful sounds of nature to the songs we hear on our phones, music is all around us! Soor Malhar aims to provide quality music lessons that will enable music learners across the globe to create the joy for themselves and others alike. Come, let's feel the magic of melodies!
+  </div>
+
+  <div id="Guitar">
+    <b style="color:black;font-size: 20px;">Guitar<br><br></b>
+    <b>Full Packages<br>
+    Level 1<br>
+    Level 2<br>
+    Level 3<br>
+    Level 4<br>
+    Songs</b>
+  </div>
+  <div id="Keyboard">
+    <b style="color:black;font-size: 20px;">Keyboard</b><br><br>
+    <b>Full Packages<br>
+    Level 1<br>
+    Level 2<br>
+    Level 3<br>
+    Level 4<br>
+    Songs</b>
+  </div>
+  <div id="Vocals">
+    <b style="color:black;font-size: 20px;">Vocals</b><br><br>
+    <b>Full Packages<br>
+    Level 1<br>
+    Level 2<br>
+    Level 3<br>
+    Level 4<br>
+    Songs</b>
+  </div>
+  <div id="Connect">
+    <b style="color:black;font-size: 20px;">Connect</b><br><br>
+    <i class="fa-solid fa-phone-flip"></i><a href="tel: +91 9898332520" style="text-decoration: none;">  +91 9898332520</a><br><br>
+    <i class="fa-solid fa-envelope"></i><a href="mailto: soormalharmusic@gmail.com" style="text-decoration: none;">  soormalharmusic@gmail.com</a><br><br>
+    <i class="fa-solid fa-house"></i>  GF 11-12 Nandanvan complex, Nandalay haveli, Rameshwar temple road, Harinagar, Gotri Road, Vadodara, Gujarat, India - 390023<br><br>
+    <i class="fa-solid fa-map"></i>  Visit us on Google Maps<br><br>
+    <a href="https://www.facebook.com/musiclearningapp" style="color: blue"><i class="fa-brands fa-facebook-square"></i></a>    
+    <a href="https://www.instagram.com/musiclearning" style="color: blue"><i class="fa-brands fa-instagram"></i></a>   
+    <a href="https://www.youtube.com/channel/UCy0gO15CjNwnRzJbg1IXK0Q" style="color: blue"><i class="fa-brands fa-youtube"></i></a>
+    </div><br>
+  </div>
+</div>
+
